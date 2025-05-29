@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "opening") {
                     composable("opening") { OpeningScreen(navController) }
-                    composable("problem") { QuestionScreen(navController) }
+                    composable("question") { QuestionScreen(navController) }
                     composable(
                         "result/{score}",
                         arguments = listOf(navArgument("score") { type = NavType.IntType })
