@@ -102,7 +102,7 @@ fun QuestionScreen(navController: NavController) {
             fontWeight = FontWeight.Bold
         )
 
-        LazyRow(
+        Row(
             modifier = Modifier.fillMaxWidth(),
         ) {
             items(tileImages) { imageRes ->
